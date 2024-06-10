@@ -39,7 +39,7 @@ export default function Quote() {
   } else {
     content = (
       <div className="flex gap-4 items-start">
-        <div className="text-c-300 text-left">
+        <div className="text-c-300 text-left flex flex-col gap-2">
           <p>{quote?.content}</p>
           <h5>{quote?.author}</h5>
         </div>

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <main
-      className={clsx("bg-black/50 bg-blend-darken", {
+      className={clsx("bg-black/70 bg-blend-darken", {
         "bg-daytime-mobile md:bg-daytime-tablet xl:bg-daytime-desktop":
           currentHour < 19,
         "bg-nighttime-mobile md:bg-nighttime-tablet xl:bg-nighttime-desktop":

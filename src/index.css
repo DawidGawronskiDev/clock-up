@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+
   main {
     @apply h-screen bg-center bg-cover;
   }
@@ -32,6 +38,6 @@
   }
 
   p {
-    @apply text-lg leading-7 max-w-lg;
+    @apply text-lg leading-7 max-w-lg font-normal;
   }
 }
