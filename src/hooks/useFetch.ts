@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useFetch<T>(href: string, errorMsg: string) {
+function useFetch<T>(href: string, errorMsg: string, fetchKey: number) {
   const [data, setData] = useState<T | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -28,7 +28,7 @@ function useFetch<T>(href: string, errorMsg: string) {
     }
 
     getData();
-  }, [href, errorMsg]);
+  }, [href, errorMsg, fetchKey]);
 
   return { data, isLoading, error };
 }
