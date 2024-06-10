@@ -20,10 +20,14 @@
   }
 
   h5 {
+    @apply text-lg leading-7 font-bold;
+  }
+
+  h6 {
     @apply text-[15px] leading-7 tracking-[3px] font-bold;
   }
 
   p {
-    @apply text-lg leading-7 font-medium;
+    @apply text-lg leading-7 max-w-lg;
   }
 }
