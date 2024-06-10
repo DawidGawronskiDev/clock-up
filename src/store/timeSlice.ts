@@ -1,11 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface TimeState {
-  date: Date;
+  date: string;
+  timezone: string;
 }
 
 const initialState: TimeState = {
-  date: new Date(),
+  date: new Date().toISOString(),
+  timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
 };
 
 const timeSlice = createSlice({
@@ -13,7 +15,7 @@ const timeSlice = createSlice({
   initialState,
   reducers: {
     updateTime: (state) => {
-      state.date = new Date();
+      state.date = new Date().toISOString();
     },
   },
 });
