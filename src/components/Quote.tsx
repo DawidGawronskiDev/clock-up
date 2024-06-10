@@ -1,6 +1,7 @@
 import { ReactNode, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import ButtonRestart from "./ButtonRestart";
+import Wrapper from "./Wrapper";
 
 type Quote = {
   _id: string;
@@ -47,7 +48,11 @@ export default function Quote() {
     );
   }
 
-  return <div className="text-c-300 text-left max-w-lg">{content}</div>;
+  return (
+    <Wrapper>
+      <div className="text-c-300 text-left max-w-lg">{content}</div>
+    </Wrapper>
+  );
 }
 
 function Skeleton() {
