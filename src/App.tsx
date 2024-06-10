@@ -1,10 +1,25 @@
 import { format } from "date-fns";
 import Quote from "./components/Quote";
 import clsx from "clsx";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { updateTime } from "./store/timeSlice";
 
 function App() {
   const currentDate = new Date();
   const currentHour = Number(format(currentDate, "H"));
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      dispatch(updateTime());
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  });
 
   return (
     <main
