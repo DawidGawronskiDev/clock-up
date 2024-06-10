@@ -7,7 +7,7 @@ export default function Wrapper({
   children: ReactNode;
   cssClasses?: string;
 }) {
-  const style = "w-11/12 max-w-5xl mx-auto" + " " + cssClasses;
+  const style = "h-full w-11/12 max-w-5xl mx-auto" + " " + cssClasses;
 
   return <div className={style}>{children}</div>;
 }
