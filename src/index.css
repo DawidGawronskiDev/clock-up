@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  main {
+    @apply h-screen bg-center bg-cover;
+  }
+
   h1 {
     @apply text-[200px] leading-[200px] -tracking-[5px] font-bold;
   }
