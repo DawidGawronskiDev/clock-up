@@ -10,7 +10,7 @@
   }
 
   main {
-    @apply h-screen bg-center bg-cover;
+    @apply h-screen bg-center bg-cover flex flex-col *:flex-1;
   }
 
   h1 {
@@ -34,7 +34,7 @@
   }
 
   h6 {
-    @apply text-[15px] leading-7 tracking-[3px] font-bold;
+    @apply text-[15px] leading-7 tracking-[3px] font-bold uppercase;
   }
 
   p {
