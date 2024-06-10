@@ -1,23 +1,22 @@
-import { useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import ArrowUp from "../assets/icon-arrow-up.svg";
 import ArrowDown from "../assets/icon-arrow-down.svg";
+import { useSelector } from "react-redux";
+import { RootState } from "../store/store";
 
 interface Button {
   children: ReactNode;
+  onClick: () => void;
 }
 
-export default function Button({ children }: Button) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleIsOpen() {
-    setIsOpen((prev) => !prev);
-  }
+export default function Button({ children, onClick }: Button) {
+  const { isOpen } = useSelector((state: RootState) => state.details);
 
   console.log(isOpen);
 
   return (
     <button
-      onClick={handleIsOpen}
+      onClick={onClick}
       className="bg-c-300 p-2 pl-4 rounded-full flex items-center justify-center gap-3"
     >
       <span className="uppercase font-bold text-base opacity-50">
