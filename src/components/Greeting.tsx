@@ -10,7 +10,7 @@ export default function Greeting() {
 
   let content: ReactNode;
 
-  if (isEvening(date)) {
+  if (!isEvening(date)) {
     content = (
       <>
         <img src={IconMoon} alt="Moon" />
