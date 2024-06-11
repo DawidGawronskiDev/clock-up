@@ -39,7 +39,7 @@ function App() {
           <Quote />
           <div className="flex items-end justify-between">
             <Clock />
-            <Button onClick={() => dispatch(open())}>More</Button>
+            <Button onClick={() => dispatch(open())} />
           </div>
         </div>
       </Wrapper>
