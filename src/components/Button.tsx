@@ -1,4 +1,3 @@
-import { type ReactNode } from "react";
 import ArrowUp from "../assets/icon-arrow-up.svg";
 import ArrowDown from "../assets/icon-arrow-down.svg";
 import { useSelector } from "react-redux";
