@@ -9,7 +9,7 @@ export default function Clock() {
   const formattedTimezone = timezone.split("/").join(" / ");
 
   return (
-    <div className="text-c-300 flex flex-col items-start justify-start">
+    <div className="text-c-300 flex flex-col items-start justify-start gap-4">
       <Greeting />
       <h1>{format(date, "kk:mm")}</h1>
       <h3>{formattedTimezone}</h3>

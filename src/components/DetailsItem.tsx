@@ -5,7 +5,7 @@ interface DetailsItemProps {
 
 export default function DetailsItem({ label, value }: DetailsItemProps) {
   return (
-    <div>
+    <div className="w-full flex md:flex-col items-center justify-between md:items-start">
       <h6>{label}</h6>
       <h2>{value}</h2>
     </div>

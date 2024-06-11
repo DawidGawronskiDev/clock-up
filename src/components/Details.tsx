@@ -19,12 +19,12 @@ export default function Details() {
       })}
     >
       <Wrapper>
-        <div className="h-full py-14 flex *:flex-1 gap-24 items-center">
-          <div className="flex flex-col gap-11">
+        <div className="py-14 flex flex-col md:flex-row *:flex-1 gap-4 md:gap-24 items-center">
+          <div className="w-full flex flex-col gap-4 md:gap-11">
             <DetailsItem label="Current timezone" value={timezone} />
             <DetailsItem label="Day of the year" value={getDayOfYear(date)} />
           </div>
-          <div className="flex flex-col gap-11">
+          <div className="w-full flex flex-col gap-4 md:gap-11">
             <DetailsItem label="Day of the week" value={getDay(date)} />
             <DetailsItem label="Week numbers" value={getWeek(date)} />
           </div>

@@ -35,9 +35,9 @@ function App() {
       })}
     >
       <Wrapper>
-        <div className="h-full flex flex-col justify-between py-14">
+        <div className="h-full flex flex-col md:items-start justify-between py-7 lg:py-14">
           <Quote />
-          <div className="flex items-end justify-between">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-12 md:gap-0 w-full">
             <Clock />
             <Button onClick={() => dispatch(open())} />
           </div>

@@ -14,14 +14,20 @@ export default function Greeting() {
     content = (
       <>
         <img src={IconMoon} alt="Moon" />
-        <h4>Good evening, It's currently</h4>
+        <h4>
+          Good evening
+          <span className="hidden lg:inline-block">, It's currently</span>
+        </h4>
       </>
     );
   } else {
     content = (
       <>
         <img src={IconSun} alt="Sun" />
-        <h4>Good morning, It's currently</h4>
+        <h4>
+          Good morning
+          <span className="hidden lg:inline-block">, It's currently</span>
+        </h4>
       </>
     );
   }

@@ -14,19 +14,19 @@
   }
 
   h1 {
-    @apply text-[200px] leading-[200px] -tracking-[5px] font-bold;
+    @apply text-8xl md:text-[200px] md:leading-[200px] -tracking-[5px] font-bold;
   }
 
   h2 {
-    @apply text-[56px] leading-[68px] font-bold;
+    @apply text-xl md:text-[56px] md:leading-[68px] font-bold;
   }
 
   h3 {
-    @apply text-2xl leading-7 tracking-[4.8px] uppercase font-bold;
+    @apply text-[15px] md:text-2xl leading-7 tracking-[4.8px] uppercase font-bold;
   }
 
   h4 {
-    @apply text-xl leading-7 tracking-[4px] uppercase;
+    @apply text-[15px] md:text-xl leading-7 tracking-[4px] uppercase;
   }
 
   h5 {
@@ -34,7 +34,7 @@
   }
 
   h6 {
-    @apply text-[15px] leading-7 tracking-[3px] font-bold uppercase;
+    @apply text-[10px] md:text-[15px] md:leading-7 tracking-[3px] font-bold uppercase;
   }
 
   p {
