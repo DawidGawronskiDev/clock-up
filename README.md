@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/DawidGawronskiDev/clock-up)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://dawidgawronskidev.github.io/clock-up/)
 
 ## My process
 
